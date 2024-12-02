@@ -1,0 +1,217 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+    scroll-behavior: smooth;
+}
+
+.nav {
+    background-color: cornflowerblue;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+nav ul {
+    display: flex;
+    padding: 20px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+    padding: 10px;
+
+}
+li a{
+    transition: all .5s ease-in-out 0s;
+    display: inline-block;
+}
+
+li a:hover {
+    color: coral;
+    transform: rotate(2deg);
+    
+}
+
+.logo {
+    width: 3%;
+    height: 3%;
+    margin-right: auto;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: all .5s ease-in-out 0s;
+}
+
+.logo:hover{
+    transform: rotate(2deg);
+}
+
+.btn{
+    margin-right: 10px;
+    border: none;
+    font-size: 14px;
+    padding: 6px 12px;
+    background-color: #f7f7f7;
+    color: coral;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: coral;
+    color: white;
+    -ms-transform: rotate(2deg);
+    transform: rotate(2deg);
+    transition: 0.3s ease-in-out;
+}
+
+
+.container {
+    max-width: 1200 px;
+    margin: 0 auto;
+    padding: 70px 0;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px 0;
+    text-align: center;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.description {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.img-frieren {
+    width: 70%;
+    max-width: 500px;
+    height: auto;
+    padding: 10px;
+}
+
+.parallax {
+    background-image: url('asset/foto/elfbogel.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.tentang {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: cornflowerblue;
+    color: white;
+    padding: 40px;
+}
+
+.mt{
+    margin-top: 20px;
+}
+
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px ;
+}
+
+.card-item {
+    text-align: center;
+    margin: 10px;
+    width: 25%;
+    background-color: #f7f7f7;
+    color: black;
+    padding: 24px;
+    box-shadow: 2px 5px 5px 1px rgba(0, 0, 0, .5);
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.card-description {
+    margin-top: 4px;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.icon {
+    width: 75px;
+    height: 75px;
+    margin: 10px;
+    padding: 4px;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: cornflowerblue;
+    color: white;
+}
+
+@media  screen and (max-width: 500px) {
+    .logo{
+        height: 10%;
+        width: 10%;
+    }
+    .card {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .card-item {
+        width: 100%;
+        margin: 0;
+        opacity: 0.8;
+    }
+
+    .container {
+        width: 100%;
+        padding: 0;
+    }
+
+    .intro{
+        margin-top: 20px;
+    }
+
+    .img-frieren {
+        width: 100%;
+        padding: 0;
+    }
+
+    nav{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: cornflowerblue;
+        z-index: 9;
+    }
+
+    footer {
+        margin-bottom: 70px;
+    }
+}
